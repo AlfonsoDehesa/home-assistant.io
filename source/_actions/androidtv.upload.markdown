@@ -10,6 +10,10 @@ related_actions:
 
 Use this action to upload a file from your Home Assistant instance to your Android or Fire TV device.
 
+## Prerequisites
+
+- The local path must be in a directory that Home Assistant is [allowed to access](/integrations/homeassistant/#allowlist_external_dirs). Otherwise, the upload is skipped and a warning is logged.
+
 {% include actions/ui_header.md %}
 
 To upload a file from an automation or a script:
@@ -62,10 +66,6 @@ local_path:
 {% endoptions_yaml %}
 
 {% include actions/targets.md domain="media_player" %}
-
-## Good to know
-
-- The local path must be in a directory that Home Assistant is [allowed to access](/integrations/homeassistant/#allowlist_external_dirs). Otherwise, the upload is skipped and a warning is logged.
 
 {% include actions/try_it.md %}
 
