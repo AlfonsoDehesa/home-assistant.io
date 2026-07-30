@@ -110,7 +110,7 @@ automation: |
   triggers:
     - trigger: battery.stopped_charging
       target:
-        entity_id: sensor.tablet_battery
+        entity_id: binary_sensor.tablet_battery_charging
   conditions:
     - condition: numeric_state
       entity_id: sensor.tablet_battery
