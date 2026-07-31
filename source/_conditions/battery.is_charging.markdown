@@ -15,7 +15,7 @@ For a visual overview of all battery statuses, open {% my maintenance title="**M
 
 ## Prerequisites
 
-- The target must be a binary sensor with the `battery_charging` device class.
+- The target must be a binary sensor with the battery charging device class.
 
 {% include conditions/ui_header.md %}
 

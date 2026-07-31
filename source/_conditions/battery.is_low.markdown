@@ -15,7 +15,7 @@ For a visual overview of all battery statuses, open {% my maintenance title="**M
 
 ## Prerequisites
 
-- The target must be a binary sensor with the `battery` device class.
+- The target must be a binary sensor with the battery device class.
 - The device must expose a low-battery indicator.
 
 {% include conditions/ui_header.md %}
