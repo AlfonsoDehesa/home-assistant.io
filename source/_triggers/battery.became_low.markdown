@@ -13,10 +13,6 @@ Use **Battery low** to send an alert before a device goes offline, pause automat
 
 For a visual overview of all battery statuses, open the {% my maintenance title="**Maintenance** dashboard" %}.
 
-## Prerequisites
-
-- Use a `binary_sensor` entity with the `battery` device class.
-
 {% include triggers/ui_header.md %}
 
 To use **Battery low** in an automation:
@@ -97,6 +93,7 @@ for:
 
 ## Good to know
 
+- Use a `binary_sensor` entity with the `battery` device class.
 - Use a label to group battery-powered devices across different areas, and target that label to monitor them all from a single automation.
 - For battery percentage sensors, use [Battery level crossed threshold](/triggers/battery.level_crossed/) instead.
 - Combine this trigger with a notification action to get a push notification on your phone the moment any sensor runs low.

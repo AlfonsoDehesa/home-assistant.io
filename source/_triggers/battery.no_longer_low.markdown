@@ -13,10 +13,6 @@ Use **Battery not low** to confirm that a device is ready to use again after mai
 
 For an overview of the status of all your battery {% term entities %}, open {% my maintenance title="**Maintenance** dashboard" %}. This dashboard allows you to quickly see which batteries need replacing.
 
-## Prerequisites
-
-- Use a `binary_sensor` entity with the `battery` device class.
-
 {% include triggers/ui_header.md %}
 
 To use **Battery not low** in an automation:
@@ -95,6 +91,7 @@ for:
 
 ## Good to know
 
+- Use a `binary_sensor` entity with the `battery` device class.
 - What counts as "low" depends on the device and its integration. The battery binary sensor is controlled by the device or its integration, not by Home Assistant.
 - For battery percentage sensors, use [Battery level crossed threshold](/triggers/battery.level_crossed/) instead.
 - Use this trigger together with [Battery low](/triggers/battery.became_low/) to build a complete low-battery workflow: alert when a device goes low, and confirm or log when it is healthy again.

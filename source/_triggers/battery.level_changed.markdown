@@ -13,10 +13,6 @@ The threshold type controls where the new reading must land for the trigger to f
 
 Use **Battery level changed** to get notified when a device starts running low, log battery drain over time, or trigger a reminder to swap out the batteries in a frequently used sensor.
 
-## Prerequisites
-
-- Use a sensor with the `battery` device class.
-
 {% include triggers/ui_header.md %}
 
 To use **Battery level changed** in an automation:
@@ -125,6 +121,7 @@ threshold:
 
 ## Good to know
 
+- Use a sensor with the `battery` device class.
 - The threshold type controls both the direction and the landing zone of the change. Use **Above** or **Below** to filter by direction, **In range** to fire only when the new value is inside a range, and **Outside range** to fire only when it escapes a range.
 - Use **Any change** to fire on every reading update regardless of direction or where the new value lands.
 - To react only when a battery level first crosses a specific value, use [Battery level crossed threshold](/triggers/battery.level_crossed/) instead.

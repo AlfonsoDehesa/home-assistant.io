@@ -14,10 +14,6 @@ The **Enable URL** action switches on a filter subscription that was previously 
 
 This pairs nicely with [Disable URL](/actions/adguard.disable_url/) to turn a blocklist on and off on a schedule, for example a stricter list that switches on during homework time or at bedtime.
 
-## Prerequisites
-
-- The list must already be added to AdGuard Home. To bring a brand-new list online, use [Add URL](/actions/adguard.add_url/) instead.
-
 {% include actions/ui_header.md %}
 
 To enable a filter subscription from an automation or a script:
@@ -65,6 +61,7 @@ url:
 
 ## Good to know
 
+- The list must already be added to AdGuard Home. To bring a brand-new list online, use [Add URL](/actions/adguard.add_url/) instead.
 - To apply the rules right away instead of waiting for the next scheduled update, follow this action with [Refresh](/actions/adguard.refresh/).
 
 {% include actions/try_it.md %}

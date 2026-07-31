@@ -11,10 +11,6 @@ related_triggers:
 
 The **Battery started charging** trigger fires when a battery-powered device transitions from not charging to actively charging. A device starts charging when it is connected to a power source, such as a charger, dock, or USB cable. Use this trigger to confirm when a device is plugged in, kick off automations that should run while a device charges, or log charging sessions over time.
 
-## Prerequisites
-
-- Use a binary sensor with the `battery_charging` device class.
-
 {% include triggers/ui_header.md %}
 
 To use **Battery started charging** in an automation:
@@ -84,6 +80,7 @@ for:
 
 ## Good to know
 
+- Use a binary sensor with the `battery_charging` device class.
 - **Battery started charging** fires only when a device transitions from not charging to actively charging. If a device is already charging when Home Assistant starts, the trigger does not fire.
 - To react when a device stops charging, use [Battery stopped charging](/triggers/battery.stopped_charging/).
 - To fire when the battery level crosses a specific percentage, use [Battery level crossed threshold](/triggers/battery.level_crossed/) instead.
